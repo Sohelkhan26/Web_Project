@@ -94,11 +94,14 @@ CREATE TABLE table1 (
 );
 ```
 
+> Note: The database name (`message`) and table name (`table1`) match the current PHP source code so the project runs without additional code edits.  
+> For production, consider using clearer names (for example `web_project_db` and `contact_messages`) and updating queries accordingly.
+
 ### 4) Update DB connection if needed
 
 Current code expects:
 
-- Host: `localhost:3308`
+- Host: `localhost:3308` *(custom port; default MySQL is usually `3306`)*
 - Username: `root`
 - Password: empty
 - Database: `message`
@@ -154,4 +157,3 @@ This project is functional and portfolio-ready; for production-grade deployment,
 
 **Md Shahrukh Khan Sohel**  
 GitHub: [@Sohelkhan26](https://github.com/Sohelkhan26)
-
